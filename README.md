@@ -54,7 +54,7 @@ El programa que tendrá nuestro Arduino resumido sería algo así:
       }
     }
 
-## Conectando Arduino on Processing
+## [Conectando Arduino on Processing](http://playground.arduino.cc/Interfacing/Processing)
 
 * Instalamos Processing
 * Descargamos la [librería de Arduino para Processing](https://github.com/firmata/processing/releases/tag/latest)
