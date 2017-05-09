@@ -61,8 +61,17 @@ El programa que tendrá nuestro Arduino resumido sería algo así:
 
 La descomprimimos en la carpeta _libraries_ del directorio _sketchbook_. A partir de ahora tendremos ejemplos para usar Arduino con Processing.
 
-Tendremos que instalar en la placa Arduino el ejemplo _StandardFirmdata_ de la librería Firmdata
+Tendremos que instalar en la placa Arduino el ejemplo _StandardFirmdata_ de la librería Firmdata.
 
+En los ejemplos de Processing puede ser necesario modificar la configuración de conexión al puerto de Arduino
+
+  arduino = new Arduino(this, Arduino.list()[0], 57600);
+
+Si tienes problemas para conectar con el puerto adecuado añade estas líneas para saber los puertos disponibles
+
+  import processing.serial.*;
+  import cc.arduino.*;
+  println(Arduino.list());
 
 # Recursos
 
