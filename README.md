@@ -19,17 +19,17 @@ Veamos ejemplos de uso.
 
  Desde una aplicación Windows queremos controlar un dispositivo Arduino: Instalamos en la placa Arduino el programar _StandardFirmdata_, que viene incluído en la librería Firmdata y en la añadimos al código de la aplicación Windows la librería Firmadata para el lenguaje correspondiente (python, java, ....). Así desde la aplicación podremos enviar órdenes que la placa Arduino cumplirá. Veamos un [ejemplo en python](https://github.com/jecrespo/Aprendiendo-Arduino/blob/master/Ejercicio38-Firmata/Python_Firmata/blink.py) que hará parpadear el pin 13 10 veces en intervalos de 1 segundo
 
-  arduino = PyMata(port, verbose=True)
+arduino = PyMata(port, verbose=True)
 
-      for x in range(10):
-          print(x + 1)
+    for x in range(10):
+        print(x + 1)
 
-          arduino.digital_write(BOARD_LED, 1)
+        arduino.digital_write(BOARD_LED, 1)
 
-          time.sleep(.5)
+        time.sleep(.5)
 
-          arduino.digital_write(BOARD_LED, 0)
-          time.sleep(.5)
+        arduino.digital_write(BOARD_LED, 0)
+        time.sleep(.5)
 
 
 El programa que tendrá nuestro Arduino resumido sería algo así:
@@ -54,6 +54,14 @@ El programa que tendrá nuestro Arduino resumido sería algo así:
       }
     }
 
+## Conectando Arduino on Processing
+
+* Instalamos Processing
+* Descargamos la [librería de Arduino para Processing](https://github.com/firmata/processing/releases/tag/latest)
+
+La descomprimimos en la carpeta _libraries_ del directorio _sketchbook_. A partir de ahora tendremos ejemplos para usar Arduino con Processing.
+
+Tendremos que instalar en la placa Arduino el ejemplo _StandardFirmdata_ de la librería Firmdata
 
 
 # Recursos
